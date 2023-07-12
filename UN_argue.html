@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" rel="stylesheet"/>
+    <link href="style.css" rel="stylesheet">
+    <script src="function.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>소명UN게시판 만들기</title>
+</head>
+<body>
+    <div id="login">로그인</div>
+    <a href="게시판 만들기.html">
+        <div id="logo"><img src="images/logo.PNG"></div>
+    </a>
+    <div id="top_banner">
+        <nav>
+            <ul>
+                <li><a href="found.html">분실물</a></li>
+                <li><a href="UN.html">소명UN</a></li>
+                <li><a href="notice.html">공지사항</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div id="UN_banner">
+        <div id="banner_title1"><a href="UN.html">UN과 유네스코 학교</a></div>
+        <div class="line1"></div>
+        <div id="banner_title2"><a href="UN_anniversary.html">UN지정 기념일</a></div>
+        <div class="line2"></div>
+        <input id="check-btn" type="checkbox" />
+        <label for="check-btn">활동방+</label>
+        <div class="menubars">
+            <div id="select"><a href="UN_argue.html">토론실</a><br><a href="UN_character.html">캐릭터키우기</a></div>
+        </div>
+    </div>
+    <div id="background">
+        <div id="topic">
+            <div class="topic">주제:</div>
+        </div>
+        <div id="opinion1">
+            <div class="opinion1">
+                <input id="circle_open" type="checkbox" />
+                <label for="circle_open"><div class="trigger">의견</div></label>
+                <div class="op_circle1">
+                    <div class="circle1">
+                        <div class="op1">의견</div>
+                        <input id="input1" onkeyup="printName()" value="입력"/>
+                        <div id="result1"></div>
+                        <!--<button type='button' class="btn-primary" onclick="offDisplay">닫기</button>--><!--닫기버튼, 글자수 제한 안됨-->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="opinion2">
+            <div class="opinion2">
+                <input id="circle_open2" type="checkbox" />
+                <label for="circle_open2"><div class="trigger">의견</div></label>
+                <div class="op_circle2">
+                    <div class="circle2">
+                        <div class="op2">의견</div>
+                        <input id="input2" onkeyup="printName2()" value="입력"/>
+                        <div id="result2"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="opinion3">
+            <div class="opinion3">
+                <input id="circle_open3" type="checkbox" />
+                <label for="circle_open3"><div class="trigger">의견</div></label>
+                <div class="op_circle3">
+                    <div class="circle3">
+                        <div class="op3">의견</div>
+                        <input id="input3" onkeyup="printName3()" value="입력"/>
+                        <div id="result3"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="opinion4">
+            <div class="opinion4">
+                <input id="circle_open4" type="checkbox" />
+                <label for="circle_open4"><div class="trigger">의견</div></label>
+                <div class="op_circle4">
+                    <div class="circle4">
+                        <div class="op4">의견</div>
+                        <input id="input4" onkeyup="printName4()" value="입력"/>
+                        <div id="result4"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="opinion5">
+            <div class="opinion5">
+                <input id="circle_open5" type="checkbox" />
+                <label for="circle_open5"><div class="trigger">의견</div></label>
+                <div class="op_circle5">
+                    <div class="circle5">
+                        <div class="op5">의견</div>
+                        <input id="input5" onkeyup="printName5()" value="입력"/>
+                        <div id="result5"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="opinion6">
+            <div class="opinion6">
+                <input id="circle_open6" type="checkbox" />
+                <label for="circle_open6"><div class="trigger">의견</div></label>
+                <div class="op_circle6">
+                    <div class="circle6">
+                        <div class="op6">의견</div>
+                        <input id="input6" onkeyup="printName6()" value="입력"/>
+                        <div id="result6"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="opinion7">
+            <div class="opinion7">
+                <input id="circle_open7" type="checkbox" />
+                <label for="circle_open7"><div class="trigger">의견</div></label>
+                <div class="op_circle7">
+                    <div class="circle7">
+                        <div class="op7">의견</div>
+                        <input id="input7" onkeyup="printName7()" value="입력"/>
+                        <div id="result7"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="opinion8">
+            <div class="opinion8">
+                <input id="circle_open8" type="checkbox" />
+                <label for="circle_open8"><div class="trigger">의견</div></label>
+                <div class="op_circle8">
+                    <div class="circle8">
+                        <div class="op8">의견</div>
+                        <input id="input8" onkeyup="printName8()" value="입력"/>
+                        <div id="result8"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<footer>
+    <div id="foot_start">
+        <div id="address">
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            소명여자고등학교 전화번호 : 070-7099-5521 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            학교 주소 : 경기도 부천시 원미구 부일로 571번길  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            사이트 문의 : 010-8009-6275
+        </div>
+    </div>
+</footer>
+</html>

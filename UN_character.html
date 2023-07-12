@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" rel="stylesheet"/>
+    <link href="style.css" rel="stylesheet">
+    <script src="function.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>소명UN게시판 만들기</title>
+</head>
+<body>
+    <div id="login">로그인</div>
+    <a href="게시판 만들기.html">
+        <div id="logo"><img src="images/logo.PNG"></div>
+    </a>
+    <div id="top_banner">
+        <nav>
+            <ul>
+                <li><a href="found.html">분실물</a></li>
+                <li><a href="UN.html">소명UN</a></li>
+                <li><a href="notice.html">공지사항</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div id="UN_banner">
+        <div id="banner_title1"><a href="UN.html">UN과 유네스코 학교</a></div>
+        <div class="line1"></div>
+        <div id="banner_title2"><a href="UN_anniversary.html">UN지정 기념일</a></div>
+        <div class="line2"></div>
+        <input id="check-btn" type="checkbox" />
+        <label for="check-btn">활동방+</label>
+        <div class="menubars">
+            <div id="select"><a href="UN_argue.html">토론실</a><br><a href="UN_character.html">캐릭터키우기</a></div>
+        </div>
+    </div>
+    <div id="rule">
+        <div class="rule_title">UN환경지킴이를 키우자!</div>
+        <div class="how">게시판을 둘러보면 UN에서 다양한 활동을 한다는 것을 알 수 있습니다.<br>
+            그렇다면 우리가 할 수 있는 일은 무엇일까요?<br>
+            UN환경지킴이 키우기는 UN에 관련된 일 중 환경에 초점을 맞춰<br>
+            우리가 할 수 있는 일과 알면 좋을 지식들을 배울 수 있는 간단한 게임입니다.<br><br><br>
+            
+            각 실천, 도움, 지식 버튼들을 누르면 성실함, 배려심 그리고 지능이 10씩 올라갑니다.<br>
+            각 능력을 100까지 키워서 훌륭한 UN환경지킴이를 키워주세요.
+        </div>
+        <div class="col-md-5" id="noneDiv" style="display: none;"></div>
+        <button onclick="offDisplay()" class="okay">확인</button>
+    </div>
+    <div id="bg">
+        <img id="character1" src="images/character1.PNG">
+        <img id="character2" src="images/character2.PNG">
+        <img id="character3" src="images/character3.PNG">
+        <img id="character4" src="images/character4.PNG">
+        <button id="button1" onclick="increase1()">실천</button>
+        <button id="button2" onclick="increase2()">도움</button>
+        <button id="button3" onclick="increase3()">지식</button>
+        <div id="speak"><img src="images/speak.PNG"></div>
+        <div id="speaking1">분리수거는 중요해요!</div>
+        <div id="speaking2">이렇게 해보는게 어때요?</div>
+        <div id="speaking3">폐의약품을 바르게 처리하는 것도 환경에 도움이 된대요! 남은 약은 약국에 가져다줘야 겠어요.</div>
+        <div id="status">
+            <div class="st_title">스테이터스</div>
+            <div class="state1">성실함:</div><div id="status1">0</div>
+            <div class="state2">배려심:</div><div id="status2">0</div>
+            <div class="state3">지능:</div><div id="status3">0</div>
+        </div>
+    </div>
+    <script language="javascript"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function(){
+        /*웹페이지 열었을 때*/
+        $("#character1").show();
+        $("#character2").hide();
+        $("#character3").hide();
+        $("#character4").hide();
+        $("#speaking1").hide();
+        $("#speaking2").hide();
+        $("#speaking3").hide();
+    
+        $("#button1").click(function(){
+            $("#character1").hide();
+            $("#character2").show();
+            $("#character3").hide();
+            $("#character4").hide();
+            $("#speaking1").show();
+            $("#speaking2").hide();
+            $("#speaking3").hide();
+        });
+    
+        $("#button2").click(function(){
+            $("#character2").hide();
+            $("#character3").show();
+            $("#character1").hide();
+            $("#character4").hide();
+            $("#speaking1").hide();
+            $("#speaking2").show();
+            $("#speaking3").hide();
+        });
+
+        $("#button3").click(function(){
+            $("#character2").hide();
+            $("#character4").show();
+            $("#character3").hide();
+            $("#character1").hide();
+            $("#speaking1").hide();
+            $("#speaking2").hide();
+            $("#speaking3").show();
+        });
+    });
+    function offDisplay() {
+        $('#rule').hide();
+    }
+
+    //quiz 내용 : 버튼을 누를때마다 button의 innerText가 10씩 증가되게 해보세요.
+    //주의할 점!! 함수명과 변수명이 겹치면 안된다.
+    //페이지가 로딩되는 시점에 count 값을 0으로 초기화 한다. 
+    var count1=0;
+    function increase1(){
+        count1=count1+10;
+        document.querySelector("#status1").innerText=count1;
+    }
+
+    var count2=0;
+    function increase2(){
+        count2=count2+10;
+        document.querySelector("#status2").innerText=count2;
+    }
+
+    var count3=0;
+    function increase3(){
+        count3=count3+10;
+        document.querySelector("#status3").innerText=count3;
+    }
+    </script>
+</body>
+<footer>
+    <div id="foot_start">
+        <div id="address">
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            소명여자고등학교 전화번호 : 070-7099-5521 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            학교 주소 : 경기도 부천시 원미구 부일로 571번길  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            사이트 문의 : 010-8009-6275
+        </div>
+    </div>
+</footer>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" rel="stylesheet"/>
+    <link href="style.css" rel="stylesheet">
+    <script src="function.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>게시판 만들기</title>
+</head>
+<body>
+    <div id="login"><a href="login.html">로그인</a></div>
+    <a href="게시판 만들기.html">
+        <div id="logo"><img src="images/logo.PNG"></div>
+    </a>
+    <div id="top_banner">
+        <div>
+            <nav>
+                <ul>
+                    <li><a href="found.html">분실물</a></li>
+                    <li><a href="UN.html">소명UN</a></li>
+                    <li><a href="notice.html">공지사항</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <div>
+        <img id="pic1" src="images/banner1.PNG">
+        <img id="pic2" src="images/banner2.PNG">
+        <div id="next1"></div>
+        <div id="next2"></div>
+        <div id="shape1">
+            <div class="shape2">
+                <div class="write3">최근 게시물</div>
+                <a href="found.html">
+                    <div class="content">게시물 이름 / 작성 날짜</div>
+                </a>
+            </div>
+        </div>
+        <div id="shape3">
+            <input class="shape4">
+                <div class="write3">건의&질문사항</div>
+            </div>
+        </div>
+        <div id="direct">
+            <a href="write.html">
+                <div class="write4">글쓰기</div>
+            </a>
+        </div>
+        <div id="population">
+            <a href="UN.html">
+                <div class="write5">UN 알아보기</div>
+            </a>
+        </div>
+    </div>
+    <script language="javascript"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+<script>
+    $(document).ready(function(){
+    /*웹페이지 열었을 때*/
+    $("#pic1").show();
+    $("#pic2").hide();
+
+    $("#next2").click(function(){
+        $("#pic1").hide();
+        $("#pic2").show();
+    });
+
+    $("#next1").click(function(){
+        $("#pic2").hide();
+        $("#pic1").show();
+    });
+});
+</script>
+</body>
+<footer>
+    <div id="foot_start">
+        <div id="address">
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            소명여자고등학교 전화번호 : 070-7099-5521 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            학교 주소 : 경기도 부천시 원미구 부일로 571번길  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            사이트 문의 : 010-8009-6275
+        </div>
+    </div>
+</footer>
+</html>
