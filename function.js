@@ -1,7 +1,7 @@
 /*function offDisplay() {
     document.getElementsByClassName("op_circle1").style.display = 'none';
 } */
-function printName()  {
+function printName1()  {
     const name = document.getElementById('input1').value;
     document.getElementById("result1").innerText = name;
 }
